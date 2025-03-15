@@ -16,10 +16,10 @@ const server = http.createServer(app);
 app.use(cors());
 app.use(express.json());
 
-// Basic route
-app.get("/", (req, res) => {
-  res.send("Hello from Color Prediction Game Backend!");
-});
+// // Basic route
+// app.get("/", (req, res) => {
+//   res.send("Hello from Color Prediction Game Backend!");
+// });
 
 // Your additional routes would go here (e.g., authentication, game logic, etc.)
 app.use("/api", TimerIdRoutes);
