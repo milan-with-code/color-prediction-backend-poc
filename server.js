@@ -2,10 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const http = require("http");
-const connectDB = require("./config/db");
-const TimerIdRoutes = require("./routes/TimerIdRoutes");
-const { updateGameTimer } = require("./controllers/TimerIdController");
-const authRoutes = require("./routes/authRoutes");
+const connectDB = require("./src/config/db");
+const TimerIdRoutes = require("./src/routes/TimerIdRoutes");
+const { updateGameTimer } = require("./src/controllers/TimerIdController");
+const authRoutes = require("./src/routes/authRoutes");
 
 dotenv.config();
 connectDB();
