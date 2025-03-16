@@ -21,6 +21,14 @@ app.get("/", (req, res) => {
   res.send("Hello from Color Prediction Game Backend!");
 });
 
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 // Your additional routes would go here (e.g., authentication, game logic, etc.)
 app.use("/api", TimerIdRoutes);
 app.use("/api/auth", authRoutes);
