@@ -41,7 +41,7 @@ const updateGameTimer = async () => {
   let game = await Game.findOne().sort({ createdAt: -1 });
 
   if (game) {
-    if (game.timeLeft > 1) {
+    if (game.timeLeft > 0) {
       game.timeLeft -= 1;
     } else {
       game.gameId = await generateGameId(); // Generate new Game ID
