@@ -14,7 +14,7 @@
   ],
   "crons": [
     {
-      "path": "/pages/api/update-timer",
+      "path": "/api/update-timer",
       "schedule": "*/1 * * * *"
     }
   ]

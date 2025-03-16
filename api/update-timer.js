@@ -1,4 +1,4 @@
-import { updateGameTimer } from "../../controllers/TimerIdController";
+import { updateGameTimer } from "../src/controllers/TimerIdController";
 
 export default async function handler(req, res) {
   try {
